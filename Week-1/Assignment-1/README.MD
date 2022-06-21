@@ -53,7 +53,7 @@ By default is supports displaying HTML, XML documents and images, but it can dis
 
 The rendering engine makes use of the networking layer to get the contents of the requested documents and this usually returns those contents in chunks. Then starts the process of Parsing -
 
-![Fig 2](./assets/images/rendering_engine_working.png)
+![Fig 2](rendering_engine_working.png)
 
 It then parse the HTML document and convert elements to DOM nodes and forms a content tree using them. Then will parse the styling rules from both the external CSS as well as the `style` tags present in the received document. The information parsed from HTML and CSS is used to create the another tree called render tree.
 
@@ -73,7 +73,7 @@ Parsing a document means translating it to a structure the code can use. It resu
 
 For example, parsing the expression `1 + 2 - 3` could generate this tree -
 
-![Fig 3](./assets/images/parser.png)
+![Fig 3](parser.png)
 
 ## Grammar
 
@@ -114,7 +114,7 @@ The DOM has an almost one-to-one relation to the markup. For example:
 
 would be converted into following DOM tree -
 
-![Fig 4](./assets/images/html_parser.png)
+![Fig 4](html_parser.png)
 
 ### CSS Parser
 
@@ -122,7 +122,7 @@ Similar to the HTML Parser, the job of CSS parser is to parse CSS. It uses the l
 
 Example:
 
-![Fig 5](./assets/images/css_parser.png)
+![Fig 5](css_parser.png)
 
 ## Script Processors
 
@@ -171,12 +171,4 @@ Incremental layout is triggered (asynchronously) when renderers are dirty. For e
 In this stage, the render tree is traversed and the renderer's "paint()" method is called to display content on the screen. Painting uses the UI infrastructure/ backend component.
 
 Like layout, painting can also be global - the entire tree is painted - or incremental. In incremental painting, some of the renderers change in a way that does not affect the entire tree.
-
-## Credits
-
-- [Pesto Tech](https://www.pesto.tech/become-a-developer)
-- [Pesto Students](https://github.com/pesto-students)
-- [Web.dev](https://web.dev/howbrowserswork/)
-- [Wikipedia](https://en.wikipedia.org/wiki/Browser_engine)
-- [Stack Overflow](https://stackoverflow.com/a/47640505/5729813)
 
