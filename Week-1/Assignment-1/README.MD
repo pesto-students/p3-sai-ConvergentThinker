@@ -6,7 +6,7 @@ A web browser is a piece of software that loads files from a remote server (or p
 
 ## What is the main functionality of the browser?
 
-The main function of a browser is to present the web resource you choose, by requesting it from the server and displaying it in the browser window. The resource is usually an HTML document, but may also be a PDF, image, or some other type of content. The location of the resource is specified by the user using a URI (Uniform Resource Identifier).
+The main function is to retrieve information from the World Wide Web and making it available for users. Visiting any website can be done using a web browser.
 
 The way the browser interprets and displays HTML files is specified in the HTML and CSS specifications. These specifications are maintained by the W3C (World Wide Web Consortium) organization, which is the standards organization for the web. For years browsers conformed to only a part of the specifications and developed their own extensions. That caused serious compatibility issues for web authors. Today most of the browsers more or less conform to the specifications.
 
@@ -24,9 +24,9 @@ The browser's main components are:
 
 5. UI backend: used for drawing basic widgets like combo boxes and windows. This backend exposes a generic interface that is not platform specific. Underneath it uses operating system user interface methods.
 
-6. JavaScript interpreter. Used to parse and execute JavaScript code.
+6. JavaScript interpreter: Used to parse and execute JavaScript code.
 
-7. Data storage. This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
+7. Data storage: This is a persistence layer. The browser may need to save all sorts of data locally, such as cookies. Browsers also support storage mechanisms such as localStorage, IndexedDB, WebSQL and FileSystem.
 
 ![Fig 1](brower_components_high_level.png)
 
